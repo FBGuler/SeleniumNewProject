@@ -1,4 +1,4 @@
-package techproed.day01_IlkTest;
+package techproed.day01_IlkTest_DriverMethods;
 
 
 import org.openqa.selenium.WebDriver;
@@ -13,6 +13,6 @@ public class C01_IlkTest {
         //getProperty ile "Key" degerini girerek "value" ya ulasabilirim.
         WebDriver driver = new ChromeDriver();
         //ChromeDriver turunde yeni bir obje Olusturduk
-        driver.get("https://techproeducation.com");
+        driver.get("https://techproeducation.com"); //get() methodu ile String olarak girilen url e gideriz.
     }
 }
