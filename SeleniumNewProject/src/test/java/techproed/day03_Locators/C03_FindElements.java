@@ -25,11 +25,25 @@ public class C03_FindElements {
 
         // Linkleri konsolda yazdırın
         for (WebElement each : linklerListesi) {
+        if (!each.getText().isEmpty()){
             System.out.println(each.getText());
+          }
         }
+
+        //Lambda ile yazdir
+        /*
+        linklerListesi.forEach(link -> {if (!link.getText().isEmpty()){
+            System.out.println(link.getText());}
+        });
+         */
 
         // sayfayı kapatın
         driver.close();
+
+        //Amazon sayfasına gidiniz
+        //iphone aratınız
+        //çıkan sonuç yazısını konsola yazdırınız
+        //çıkan ürünlerden ilk 5 tanesine tıklayıp sayfa başlıklarını yazdırınız
 
 
     }
