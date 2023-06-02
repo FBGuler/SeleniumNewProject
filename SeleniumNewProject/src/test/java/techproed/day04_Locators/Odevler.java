@@ -26,7 +26,7 @@ public class Odevler {
         aramaKutusu.submit();
 
         //çıkan sonuç yazısını konsola yazdırınız
-        System.out.println(driver.findElement(By.className("a-color-state a-text-bold")).getText());
+        System.out.println(driver.findElement(By.xpath("//*[text()='1-32 of 923 results for']")).getText());
 
 
         //çıkan ürünlerden ilk 5 tanesine tıklayıp sayfa başlıklarını yazdırınız

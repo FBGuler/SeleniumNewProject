@@ -8,6 +8,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 import java.time.Duration;
 
+import static org.openqa.selenium.support.locators.RelativeLocator.with;
+
 public class CN03_relativeLocators {
     public static void main(String[] args) {
 
@@ -30,6 +32,11 @@ public class CN03_relativeLocators {
         driver.findElement(By.xpath("//*[@type='text']")).sendKeys("city bike" + Keys.ENTER);
 
         //relative locator kullanarak hybrid bike altindaki elemente tiklayalim
+        WebElement hybridBike = driver.findElement(By.xpath("//*[text()='Hybrid Bikes']"));
+        WebElement electricBike = driver.findElement(with(By.tagName("a")).below(hybridBike));
+        WebElement completeBike = driver.findElement(with(By.tagName("a")).below(electricBike));
+        completeBike.click();
+
 
 
 
